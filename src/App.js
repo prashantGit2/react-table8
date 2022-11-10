@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Table from './components/table'
+import './App.css'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='App'>
+      {/* <a href='#last' >last</a> */}
+      <Table />
     </div>
-  );
+    {/* <div style={{display:"flex",flexDirection:"column"}}>
+      <div id="first" className='vh30 center-items bg-blue'>this should be downside #first</div>
+      <div className='vh30 center-items bg-red'>this should be downside</div>
+      <div className='vh30 center-items bg-blue'>this should be downside</div>
+      <div className='vh30 center-items bg-red'>this should be downside</div>
+      <div id="m" className='vh30 center-items bg-blue'>this should be downside</div>
+      <div className='vh30 center-items bg-red'>this should be downside</div>
+      <div className='vh30 center-items bg-blue'>this should be downside</div>
+      <div className='vh30 center-items bg-red'>this should be downside</div>
+      <div className='vh30 center-items bg-blue'>this should be downside</div>
+      <div id="last" className='vh30 center-items bg-red'>this should be downside #last</div>
+      
+      
+    </div> */}
+    </>
+  )
 }
 
-export default App;
+export default App
